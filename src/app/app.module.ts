@@ -1,14 +1,22 @@
+import { ContadorModulo } from './contador/contador.module';
+import { HeroeModulo } from './heroes/heroes.module';
+
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    HeroeModulo,
+    ContadorModulo
   ],
   providers: [],
   bootstrap: [AppComponent]
